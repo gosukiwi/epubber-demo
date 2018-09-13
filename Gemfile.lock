@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    epubber (0.2.0)
+      liquid (~> 3.0)
+      nokogiri (~> 1.6)
+      rubyzip (>= 1.0.0)
+    liquid (3.0.6)
+    mini_portile2 (2.3.0)
+    nokogiri (1.8.4)
+      mini_portile2 (~> 2.3.0)
+    rubyzip (1.2.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  epubber
+
+BUNDLED WITH
+   1.16.2
