@@ -3,13 +3,14 @@
 require "epubber"
 
 current_dir = File.dirname(__FILE__)
+cover_image = File.new "#{current_dir}/cover.jpg"
 path = Epubber.generate(working_dir: current_dir) do |b|
   b.title "My First EPUB book"
   b.author "Ramirez, Federico"
   b.url "https://beezwax.net"
 
   b.cover do |c|
-    c.file File.new("#{current_dir}/cover.jpg")
+    c.file cover_image
   end
 
   b.introduction do |i|
